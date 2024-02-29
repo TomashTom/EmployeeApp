@@ -15,7 +15,7 @@ namespace EmployeeApp
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder
-                .UseNpgsql("Host=localhost; Port=7777; Database=uvsproject; Username=postgres; Password=guest;");
+                .UseNpgsql("Host=db; Port=5432; Database=uvsproject; Username=postgres; Password=guest;");
             base.OnConfiguring(optionsBuilder);
         }
     }
